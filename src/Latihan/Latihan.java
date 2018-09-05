@@ -217,7 +217,7 @@ public class Latihan extends javax.swing.JFrame {
         }
         }
         else{jur = "";}
-        new Frame(nm,abs,jur,almt,kelas).setVisible(true);
+        new FrameLatihan(nm,abs,jur,almt,kelas).setVisible(true);
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
