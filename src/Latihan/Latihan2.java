@@ -28,6 +28,7 @@ public class Latihan2 extends javax.swing.JFrame {
     private void initComponents() {
 
         Pilihanjurusan = new javax.swing.ButtonGroup();
+        jLabel8 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -47,7 +48,10 @@ public class Latihan2 extends javax.swing.JFrame {
         ButtonRemove = new javax.swing.JButton();
         ButtonExit = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Pictures\\BLACKPINK_logo.jpg")); // NOI18N
+        jLabel8.setText("jLabel8");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -55,11 +59,11 @@ public class Latihan2 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("BIODATA");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(280, 0, 110, 30);
+        jLabel1.setBounds(290, 0, 110, 30);
 
         jLabel2.setText("Nama");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(120, 40, 60, 20);
+        jLabel2.setBounds(120, 40, 60, 30);
 
         jLabel3.setText("Absen");
         getContentPane().add(jLabel3);
@@ -67,11 +71,11 @@ public class Latihan2 extends javax.swing.JFrame {
 
         jLabel4.setText("Jurusan");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(120, 140, 80, 14);
+        jLabel4.setBounds(120, 140, 80, 20);
 
         jLabel5.setText("Hobi");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(120, 190, 50, 14);
+        jLabel5.setBounds(120, 190, 50, 20);
 
         varNama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,7 +83,7 @@ public class Latihan2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(varNama);
-        varNama.setBounds(190, 40, 250, 30);
+        varNama.setBounds(200, 40, 280, 30);
 
         varAbsen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,7 +91,7 @@ public class Latihan2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(varAbsen);
-        varAbsen.setBounds(190, 90, 250, 30);
+        varAbsen.setBounds(200, 90, 280, 30);
 
         Pilihanjurusan.add(rdbTkj);
         rdbTkj.setText("TKJ");
@@ -97,22 +101,22 @@ public class Latihan2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(rdbTkj);
-        rdbTkj.setBounds(190, 140, 60, 23);
+        rdbTkj.setBounds(200, 140, 60, 23);
 
         Pilihanjurusan.add(rdbRpl);
         rdbRpl.setText("RPL");
         getContentPane().add(rdbRpl);
-        rdbRpl.setBounds(370, 140, 70, 23);
+        rdbRpl.setBounds(380, 140, 70, 23);
 
         cbProgram.setForeground(new java.awt.Color(255, 255, 255));
         cbProgram.setText("Programming");
         getContentPane().add(cbProgram);
-        cbProgram.setBounds(180, 190, 100, 23);
+        cbProgram.setBounds(190, 190, 100, 23);
 
         cbDesign.setForeground(new java.awt.Color(255, 255, 255));
         cbDesign.setText("Designer");
         getContentPane().add(cbDesign);
-        cbDesign.setBounds(180, 280, 100, 23);
+        cbDesign.setBounds(190, 280, 100, 23);
 
         cbAnimator.setForeground(new java.awt.Color(255, 255, 255));
         cbAnimator.setText("Animator");
@@ -122,7 +126,7 @@ public class Latihan2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cbAnimator);
-        cbAnimator.setBounds(360, 190, 110, 23);
+        cbAnimator.setBounds(370, 190, 110, 23);
 
         cbVideo.setForeground(new java.awt.Color(255, 255, 255));
         cbVideo.setText("Video Editing");
@@ -132,14 +136,14 @@ public class Latihan2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(cbVideo);
-        cbVideo.setBounds(360, 280, 110, 23);
+        cbVideo.setBounds(370, 280, 110, 23);
 
         Hasil.setColumns(20);
         Hasil.setRows(5);
         jScrollPane1.setViewportView(Hasil);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(180, 370, 290, 120);
+        jScrollPane1.setBounds(190, 370, 300, 120);
 
         ButtonSubmit.setText("Submit");
         ButtonSubmit.addActionListener(new java.awt.event.ActionListener() {
@@ -148,11 +152,11 @@ public class Latihan2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ButtonSubmit);
-        ButtonSubmit.setBounds(170, 320, 90, 23);
+        ButtonSubmit.setBounds(190, 320, 90, 23);
 
         ButtonRemove.setText("Remove");
         getContentPane().add(ButtonRemove);
-        ButtonRemove.setBounds(280, 320, 100, 23);
+        ButtonRemove.setBounds(300, 320, 100, 23);
 
         ButtonExit.setText("Exit");
         ButtonExit.addActionListener(new java.awt.event.ActionListener() {
@@ -161,18 +165,18 @@ public class Latihan2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ButtonExit);
-        ButtonExit.setBounds(400, 320, 70, 23);
+        ButtonExit.setBounds(420, 320, 70, 23);
 
         jLabel6.setText("Hasil");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(190, 350, 34, 14);
+        jLabel6.setBounds(200, 350, 34, 14);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Pictures\\Untitled.png")); // NOI18N
-        jLabel8.setText("jLabel8");
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(0, 40, 650, 460);
+        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Pictures\\BLACKPINK_logo.jpg")); // NOI18N
+        jLabel7.setText("jLabel7");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(0, 0, 780, 500);
 
-        setBounds(0, 0, 710, 529);
+        setBounds(0, 0, 794, 532);
     }// </editor-fold>//GEN-END:initComponents
 
     private void varAbsenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_varAbsenActionPerformed
@@ -286,6 +290,7 @@ cbVideo.setSelected(false);
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JRadioButton rdbRpl;

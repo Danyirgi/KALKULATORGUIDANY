@@ -317,6 +317,7 @@ int pilih;
          angka1=Double.parseDouble(angka);
 out.setText("%");
 angka="";
+pilih=(5);
     }//GEN-LAST:event_persenActionPerformed
 
     private void tujuhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tujuhActionPerformed
@@ -440,6 +441,10 @@ pilih=4;
             angka = Double.toString(jumlah);
             out.setText(angka);
             break;
+        case 5:
+            jumlah = angka1/100;
+            angka = Double.toString(jumlah);
+            out.setText(angka);
             default:
             break;
         }
