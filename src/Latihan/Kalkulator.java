@@ -53,7 +53,7 @@ int pilih;
         tk = new javax.swing.JButton();
         akar = new javax.swing.JButton();
         persen = new javax.swing.JButton();
-        pangkat = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("KALKULATOR ");
@@ -281,15 +281,15 @@ int pilih;
         jPanel1.add(persen);
         persen.setBounds(10, 260, 70, 60);
 
-        pangkat.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        pangkat.setText("¹/x");
-        pangkat.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jButton1.setText("x²");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pangkatActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(pangkat);
-        pangkat.setBounds(10, 320, 70, 60);
+        jPanel1.add(jButton1);
+        jButton1.setBounds(10, 320, 70, 60);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 480, 450);
@@ -445,6 +445,12 @@ pilih=4;
             jumlah = angka1/100;
             angka = Double.toString(jumlah);
             out.setText(angka);
+            break;
+        case 6:
+            jumlah = Math.pow(angka1, 2);
+            angka = Double.toString(jumlah);
+            out.setText(angka);
+            break;
             default:
             break;
         }
@@ -467,13 +473,6 @@ jumlah=0;
 angka="";
     }//GEN-LAST:event_cActionPerformed
 
-    private void pangkatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pangkatActionPerformed
-        // TODO add your handling code here:
-           angka1=Double.parseDouble(angka);
-out.setText("¹/x");
-angka="";
-    }//GEN-LAST:event_pangkatActionPerformed
-
     private void hpsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hpsActionPerformed
         // TODO add your handling code here:
         String hps = null;
@@ -485,6 +484,14 @@ angka="";
             out.setText(hps);
         }
     }//GEN-LAST:event_hpsActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        angka1=Double.parseDouble(angka);
+        out.setText("*");
+        angka="";
+        pilih = (6);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -530,6 +537,7 @@ angka="";
     private javax.swing.JButton empat;
     private javax.swing.JButton enam;
     private javax.swing.JButton hps;
+    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton kali;
     private javax.swing.JButton koma;
@@ -537,7 +545,6 @@ angka="";
     private javax.swing.JButton lima;
     private javax.swing.JButton nol;
     private javax.swing.JTextField out;
-    private javax.swing.JButton pangkat;
     private javax.swing.JButton persen;
     private javax.swing.JButton sama;
     private javax.swing.JButton satu;
